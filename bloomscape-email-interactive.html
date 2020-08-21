@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <!-- Help character display properly. -->
+    <meta charset="utf-8">
+    <!-- Force some Outlook clients to render with a better MS engine. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the initial scale of the email. -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Help prevent blue links and autolinking if needed. -->
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <!-- Prevent Apple from reformatting and zooming messages. -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Use the title for assistive technology and when people open emails in a browser tab.  -->
+    <title></title>
+    <!-- Allow for better image rendering on Windows hi-DPI displays. -->
+    <!--[if mso]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+         @import url("https://use.typekit.net/mgh0hgf.css");
+
+        /* Client-specific reset styles. */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; }
+
+        /* General reset styles. */
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+        /* Prevent Apple blue links. */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* Prevent Gmail blue links. */
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Prevent Samsung blue links. */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Provide default styles for links and hovers. */
+        a { color: #224229; font-weight: bold !important; text-decoration: none !important;}
+        a:hover { color: #224229; text-decoration: underline !important; }
+        a.button:hover { background-color: #224229 !important; color: #f8f1e3 !important; border: 2px solid #f8f1e3 !important; }
+
+        /* Styling for light text */
+        .light-text {
+            color: #f8f1e3 !important;
+        }
+
+        /* Fade transition */
+        .fade:hover {
+            transition: 0.4s !important;
+            opacity: 0.5 !important;
+        }
+
+        /* Hide inputs */
+        input {display:none !important;}
+
+        /* Make labels look clickable */
+        label { cursor: pointer; }
+
+        /* Show checked slide */
+        #lowlight:checked ~ .lowlight,
+        #medlight:checked ~ .medlight,
+        #highlight:checked ~ .highlight {
+            display: block !important;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        .fallback {
+        display:none!important;
+        max-height:0;
+        overflow:hidden;
+        }
+
+        .interactive {
+        display:block!important;
+        max-height:none!important;
+        }
+
+        }   
+
+        /* Responsive styles taking a desktop-first approach. */
+        @media screen and (max-width: 600px) {
+            .mobile { width: 100% !important; }
+            .mobile-img {width: 600px !important;}
+            .show-mobile {display:block !important;}
+            .hide-mobile {display: none !important;}
+            p, h1, h2, h3, h4, h5, h6 {padding:0px 20px !important;}
+        }
+    </style>
+</head>
+
+<!-- Set a body id for Gmail blue links and disable default margins and padding. -->
+<body id="body" style="margin: 0 !important; padding: 0 !important;" >
+
+    <!-- Make your email an accessible article. -->
+    <div role="article" aria-roledescription="email" aria-label="email name" lang="en" style="font-size:1rem">
+
+        <!-- Override those settings on a per-element basis as needed. -->
+        <div style="color: #224229; font-family: matrix-ii, serif; font-size: 18px; font-weight: 300 !important; line-height: normal; margin: 0;">
+
+            <!-- Logo module -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                <tbody>
+                    <tr>
+                        <!-- Background wrapper-->
+                        <td align="center" bgcolor="#f8f1e3" style="padding: 0px 0px;" valign="top" width="100%">
+                        <!-- Content block-->
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                            <tbody>
+                                <tr>
+                                    <td align="center" class="mobile" style="width: 600px; max-width: 600px;">
+                                        <!-- This is a responsive image -->
+                                        <img alt="Logo" src="https://gateszies.github.io/responsive-email-examples/images/bloomscape_logo_hq_d-green.png" width="200" border="0" style="display: block; max-width: 100%; height: auto;">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Text module -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                <tbody>
+                    <tr>
+                        <!-- Background wrapper-->
+                        <td align="center" bgcolor="#f8f1e3" style="padding: 0px 0px;" valign="top" width="100%">
+                        <!-- Content block-->
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                            <tbody>
+                                <tr>
+                                    <td align="center" class="mobile" style="width: 600px; max-width: 600px;">
+                                        <!-- This is a responsive image -->
+                                        <img alt="Plant Icon" src="https://gateszies.github.io/responsive-email-examples/images/plant_icon.png" width="50" border="0" style="display: block; max-width: 100%; height: auto;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <h1 style="margin: 0; padding: 0; line-height:48px;">
+                                            wondering which houseplant is right for you?
+                                        </h1>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin: 0; padding: 0; line-height: 26px; ">
+                                            We know that you love plants just as much as we do. That's why we want to make sure you get one that is a perfect fit for your life.
+                                        </p>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 30px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- This is a button. -->
+                                        <a class="button" href="#" style="letter-spacing: 2px; background: #f8f1e3; text-decoration: none; padding: 15px 25px; color: #224229; border: 2px solid #224229; display:inline-block; mso-padding-alt:0;text-underline-color:#333">
+                                            <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]-->
+                                                <span style="mso-text-raise:15pt;">TAKE THE QUIZ</span>
+                                            <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Slider module -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                <tbody>
+                    <tr>
+                        <!-- Background wrapper-->
+                        <td align="center" bgcolor="#224229" style="padding: 0px 0px;" valign="top" width="100%">
+                        <!-- Content block-->
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                            <tbody>
+                                <tr>
+                                    <td align="center" class="mobile" style="width: 600px; max-width: 600px;">
+                                        <p class="light-text" style="letter-spacing:2px; font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">FIND YOUR PERFECT MATCH</p>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 10px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                            How much light will your plant receive?
+                                        </h1>
+                                        <table class="hide-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+
+                                
+                                        <!--[if !mso]><!-- -->
+                                        <!-- Hidden Inputs -->
+                                        <input type="radio" name="items" id="lowlight">
+                                        <input type="radio" name="items" id="medlight">
+                                        <input type="radio" name="items" id="highlight">
+                                        
+                                        <!-- Answers (Interactive) -->
+                                        <div class="interactive" style="display: none; max-height: 0; overflow: hidden;">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile hide-mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" class="mobile" style="width: 600px; max-width: 600px;">   
+                                            
+                                                            <!-- This is the left column. (Answer 1 - Low Light) -->
+                                                            <label for="lowlight">
+                                                                <table class="fade mobile" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="32%">
+                                                                    <tr>
+                                                                        <td align="center" bgcolor="#f8f1e3" style="border-radius: 5px;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 85px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- This is a responsive image -->
+                                                                            <img alt="Small Plant Icon" src="https://gateszies.github.io/responsive-email-examples/images/low-light.png" width="35" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <h3 style="margin: 0; padding: 0; line-height: 30px; ">
+                                                                            Low Light
+                                                                            </h3>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </label>
+                                                            <!-- Vertical Spacer Column -->
+                                                            <table class="hide-mobile" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation" width="2%">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+        
+                                                            <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+        
+                                                            <!-- This is the center column. (Answer 2 - Medium Light) -->
+                                                            <label for="medlight">
+                                                                <table class="fade mobile" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" width="32%">
+                                                                    <tr>
+                                                                        <td align="center" bgcolor="#f8f1e3" style="border-radius: 5px;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 66px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- This is a responsive image -->
+                                                                            <img alt="Medium Plant Icon" src="https://gateszies.github.io/responsive-email-examples/images/med-light.png" width="45" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <h3 style="margin: 0; padding: 0; line-height: 30px; ">
+                                                                                Medium Light
+                                                                            </h3>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </label>
+        
+                                                            <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+        
+                                                            <!-- This is the right column. (Answer 3 - High Light) -->
+                                                            <label for="highlight">
+                                                                <table class="fade mobile" align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" width="32%">
+                                                                    <tr>
+                                                                        <td align="center" bgcolor="#f8f1e3" style="border-radius: 5px;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- This is a responsive image -->
+                                                                            <img alt="Large Plant Icon" src="https://gateszies.github.io/responsive-email-examples/images/high-light.png" width="70" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <h3 style="margin: 0; padding: 0; line-height: 30px; ">
+                                                                                High Light
+                                                                            </h3>
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--<![endif]-->
+
+                                            <!-- Interactive Plants -->
+                                            <!-- Plant #1 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile lowlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile lowlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">low light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Neon Prayer Plant
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Plant #2 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile medlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <!-- This is a responsive image -->
+                                                        <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile medlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">medium light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Fiddle Leaf Fig
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It’s not bushy, making it a beautiful interior design addition for a brightly lit corner or cozy nook in your home.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Plant #3 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile highlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <!-- This is a responsive image -->
+                                                        <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile highlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">high light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Prickly Pear Cactus
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+
+
+                                        <!-- Static Plants -->
+                                        <div class="fallback">
+                                            <!-- Plant #1 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">low light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Neon Prayer Plant
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Plant #2 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <!-- This is a responsive image -->
+                                                        <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">medium light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Fiddle Leaf Fig
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It’s not bushy, making it a beautiful interior design addition for a brightly lit corner or cozy nook in your home.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- Plant #3 -->
+                                            <!-- This is the left column. -->
+                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
+                                                <tr>
+                                                    <td style="border-radius: 5px;">
+                                                        <!-- This is a responsive image -->
+                                                        <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- This is the right column. -->
+                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
+                                                <tr>
+                                                    <td>
+                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">high light</p>
+                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                            Prickly Pear Cactus
+                                                        </h1>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                            An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                        </p>
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- This is a button. -->
+                        <a class="button" href="#" style="letter-spacing: 2px; background: #f8f1e3; text-decoration: none; padding: 15px 25px; color: #224229; border: 2px solid #224229; display:inline-block; mso-padding-alt:0;text-underline-color:#333">
+                            <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]-->
+                                <span style="mso-text-raise:15pt;">TAKE THE QUIZ</span>
+                            <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
+                        </a>
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Footer module -->
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                <tbody>
+                    <tr>
+                        <!-- Background wrapper-->
+                        <td align="center" bgcolor="#f8f1e3" style="padding: 0px 0px;" valign="top" width="100%">
+                        <!-- Content block-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                            <tbody>
+                                <tr>
+                                    <td align="center" class="mobile" style="width: 600px; max-width: 600px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- This is a responsive image -->
+                                        <img alt="Bloomscape icon." src="https://gateszies.github.io/responsive-email-examples/images/favicon-32x32.png" width="30" border="0" style="display: block; max-width: 100%; height: auto;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 15px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin: 0; padding: 0; line-height: 26px;">2244 Nicollet Ave<br>Minneapolis, MN 55104<br><br>
+                                        You received this email because you've subscribed to our marketing communications. If you'd prefer not to receive marketing updates, you can
+                                        <a href="http://">update your preferences</a>
+                                        or 
+                                        <a href="http://">unsubscribe from all</a>.
+                                        </p>
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tbody>
+                                              <tr>
+                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+        </div>
+    </div>
+</body>
+</html>
