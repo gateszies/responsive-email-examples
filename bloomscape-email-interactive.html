@@ -92,17 +92,18 @@
         #medlight:checked ~ .medlight,
         #highlight:checked ~ .highlight {
             display: block !important;
+            max-height: none !important;
         }
         @media screen and (-webkit-min-device-pixel-ratio: 0) {
         .fallback {
-        display:none!important;
+        display:none !important;
         max-height:0;
         overflow:hidden;
         }
 
         .interactive {
-        display:block!important;
-        max-height:none!important;
+        display:block !important;
+        max-height:none !important;
         }
 
         }   
@@ -111,7 +112,7 @@
         @media screen and (max-width: 600px) {
             .mobile { width: 100% !important; }
             .mobile-img {width: 600px !important;}
-            .show-mobile {display:block !important;}
+            .show-mobile {display:block !important; max-height:none !important;}
             .hide-mobile {display: none !important;}
             p, h1, h2, h3, h4, h5, h6 {padding:0px 20px !important;}
         }
@@ -125,7 +126,7 @@
     <div role="article" aria-roledescription="email" aria-label="email name" lang="en" style="font-size:1rem">
 
         <!-- Override those settings on a per-element basis as needed. -->
-        <div style="color: #224229; font-family: matrix-ii, serif; font-size: 18px; font-weight: 300 !important; line-height: normal; margin: 0;">
+        <div style="color: #224229; font-family: matrix-ii, sans-serif; font-size: 18px; font-weight: 300 !important; line-height: normal; margin: 0;">
 
             <!-- Logo module -->
             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
@@ -277,7 +278,7 @@
                                         <input type="radio" name="items" id="highlight">
                                         
                                         <!-- Answers (Interactive) -->
-                                        <div class="interactive" style="display: none; max-height: 0; overflow: hidden;">
+                                        <div class="interactive hide-mobile" style="display: none; max-height: 0; overflow: hidden;">
                                             <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile hide-mobile" role="presentation" style="width: 600px; max-width: 600px;">
                                                 <tbody>
                                                     <tr>
@@ -426,345 +427,364 @@
                                                 </tbody>
                                             </table>
                                         </div>
+                                        <!-- Interactive Plants -->
+                                        <!-- Plant #1 -->
+                                        <!-- This is the left column. -->
+                                        <table align="left" border="0" class="mobile lowlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                            <tr>
+                                                <td style="border-radius: 5px;">
+                                                    <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                    <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- This is the right column. -->
+                                        <table align="right" border="0" class="mobile lowlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                            <tr>
+                                                <td>
+                                                    <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">low light</p>
+                                                    <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                        Neon Prayer Plant
+                                                    </h1>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                        This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                        <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Plant #2 -->
+                                        <!-- This is the left column. -->
+                                        <table align="left" border="0" class="mobile medlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                            <tr>
+                                                <td style="border-radius: 5px;">
+                                                    <!-- This is a responsive image -->
+                                                    <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                    <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- This is the right column. -->
+                                        <table align="right" border="0" class="mobile medlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                            <tr>
+                                                <td>
+                                                    <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">medium light</p>
+                                                    <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                        Fiddle Leaf Fig
+                                                    </h1>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                        The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It’s not bushy, making it a beautiful interior design addition for a brightly lit corner or cozy nook in your home.
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                        <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Plant #3 -->
+                                        <!-- This is the left column. -->
+                                        <table align="left" border="0" class="mobile highlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
+                                            <tr>
+                                                <td style="border-radius: 5px;">
+                                                    <!-- This is a responsive image -->
+                                                    <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                    <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- This is the right column. -->
+                                        <table align="right" border="0" class="mobile highlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
+                                            <tr>
+                                                <td>
+                                                    <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">high light</p>
+                                                    <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                        Prickly Pear Cactus
+                                                    </h1>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                        An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                        <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
                                         <!--<![endif]-->
-
-                                            <!-- Interactive Plants -->
-                                            <!-- Plant #1 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile lowlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile lowlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">low light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Neon Prayer Plant
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- Plant #2 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile medlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <!-- This is a responsive image -->
-                                                        <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile medlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">medium light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Fiddle Leaf Fig
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It’s not bushy, making it a beautiful interior design addition for a brightly lit corner or cozy nook in your home.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- Plant #3 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile highlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <!-- This is a responsive image -->
-                                                        <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile highlight show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text show-mobile" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">high light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Prickly Pear Cactus
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
 
 
                                         <!-- Static Plants -->
-                                        <div class="fallback">
-                                            <!-- Plant #1 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
+                                        <div class="fallback show-mobile">
+                                            <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
                                             </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">low light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Neon Prayer Plant
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- Plant #2 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <!-- This is a responsive image -->
-                                                        <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">medium light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Fiddle Leaf Fig
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It’s not bushy, making it a beautiful interior design addition for a brightly lit corner or cozy nook in your home.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-
-                                            <!-- Plant #3 -->
-                                            <!-- This is the left column. -->
-                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="38%">
-                                                <tr>
-                                                    <td style="border-radius: 5px;">
-                                                        <!-- This is a responsive image -->
-                                                        <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
-                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <!-- This is the right column. -->
-                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="58%">
-                                                <tr>
-                                                    <td>
-                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">high light</p>
-                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
-                                                            Prickly Pear Cactus
-                                                        </h1>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
-                                                            An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
-                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
-                                                        </p>
-                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                                            <tbody>
-                                                            <tr>
-                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="mobile" role="presentation" style="width: 600px; max-width: 600px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <!-- Plant #1 -->
+                                                            <!-- This is the left column. -->
+                                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td style="border-radius: 5px;">
+                                                                        <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="250" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- This is the right column. -->
+                                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">low light</p>
+                                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                                            Neon Prayer Plant
+                                                                        </h1>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                                            This plant has striking bright green oval leaves with a herringbone-like pattern. Perfect plant for window sills, mantles, or shelves that need a splash of color.
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <!-- Plant #2 -->
+                                                            <!-- This is the left column. -->
+                                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td style="border-radius: 5px;">
+                                                                        <!-- This is a responsive image -->
+                                                                        <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="250" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- This is the right column. -->
+                                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">medium light</p>
+                                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                                            Fiddle Leaf Fig
+                                                                        </h1>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                                            The Fiddle Leaf Fig is easily recognizable and loved for its distinctive foliage. This tall, dramatic plant has very large, heavily veined, violin-shaped leaves that grow upright. It makes a beautiful addition to a brightly lit corner or cozy nook in your home.
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <!-- Plant #3 -->
+                                                            <!-- This is the left column. -->
+                                                            <table align="left" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td style="border-radius: 5px;">
+                                                                        <!-- This is a responsive image -->
+                                                                        <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="250" border="0" style="display: block; max-width: 100%; height: auto;">
+                                                                        <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 35px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- This is the right column. -->
+                                                            <table align="right" border="0" class="mobile show-mobile" cellpadding="0" cellspacing="0" role="presentation" width="48%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <p class="light-text" style="font-family: stolzl, serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px;">high light</p>
+                                                                        <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
+                                                                            Prickly Pear Cactus
+                                                                        </h1>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; ">
+                                                                            An intriguing cactus with bright green paddle-like pads that actually grow on top of each other. Perfect for the person who wishes to add a bit of green to their environment with limited time to care for plants.
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 20px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <p class="light-text" style="margin: 0; padding: 0; line-height: 26px; font-weight: bold;">
+                                                                            <a class="light-text" href="#" style="margin: 0; padding: 0; line-height: 26px; font-weight:bold !important;">bring one home today →</a>
+                                                                        </p>
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td style="font-size: 1px; line-height: 70px;" class="">&nbsp;</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
                                         </div>
                                     </td>
@@ -837,8 +857,6 @@
                     </tr>
                 </tbody>
             </table>
-            
-
         </div>
     </div>
 </body>
