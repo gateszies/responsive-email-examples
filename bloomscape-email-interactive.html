@@ -98,7 +98,6 @@
         .fallback {
         display:none !important;
         max-height:0;
-        overflow:hidden;
         }
 
         .interactive {
@@ -113,6 +112,7 @@
             .mobile { width: 100% !important; }
             .mobile-img {width: 600px !important;}
             .show-mobile {display:block !important; max-height:none !important;}
+
             .hide-mobile {display: none !important;}
             p, h1, h2, h3, h4, h5, h6 {padding:0px 20px !important;}
         }
@@ -432,7 +432,7 @@
                                         <!-- This is the left column. -->
                                         <table align="left" border="0" class="mobile lowlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
                                             <tr>
-                                                <td style="border-radius: 5px;">
+                                                <td style="border-radius: 5px;" class="hide-mobile">
                                                     <img class="mobile-img" alt="Neon Prayer Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/low-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
                                                     <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
                                                         <tbody>
@@ -447,7 +447,7 @@
                                         <!-- This is the right column. -->
                                         <table align="right" border="0" class="mobile lowlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
                                             <tr>
-                                                <td>
+                                                <td class="hide-mobile">
                                                     <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">low light</p>
                                                     <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
                                                         Neon Prayer Plant
@@ -487,7 +487,7 @@
                                         <!-- This is the left column. -->
                                         <table align="left" border="0" class="mobile medlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
                                             <tr>
-                                                <td style="border-radius: 5px;">
+                                                <td style="border-radius: 5px;" class="hide-mobile">
                                                     <!-- This is a responsive image -->
                                                     <img class="mobile-img" alt="Fiddle Leaf Fig Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/med-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
                                                     <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
@@ -503,7 +503,7 @@
                                         <!-- This is the right column. -->
                                         <table align="right" border="0" class="mobile medlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
                                             <tr>
-                                                <td>
+                                                <td class="hide-mobile">
                                                     <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">medium light</p>
                                                     <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
                                                         Fiddle Leaf Fig
@@ -543,7 +543,7 @@
                                         <!-- This is the left column. -->
                                         <table align="left" border="0" class="mobile highlight" cellpadding="0" cellspacing="0" role="presentation" width="38%" style="display: none;">
                                             <tr>
-                                                <td style="border-radius: 5px;">
+                                                <td style="border-radius: 5px;" class="hide-mobile">
                                                     <!-- This is a responsive image -->
                                                     <img class="mobile-img" alt="Prickly Pear Cactus Plant in Pot" src="https://gateszies.github.io/responsive-email-examples/images/high-light-plant.jpg" width="600" border="0" style="display: block; max-width: 100%; height: auto;">
                                                     <table class="show-mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: none;">
@@ -559,7 +559,7 @@
                                         <!-- This is the right column. -->
                                         <table align="right" border="0" class="mobile highlight" cellpadding="0" cellspacing="0" role="presentation" width="58%" style="display: none;">
                                             <tr>
-                                                <td>
+                                                <td class="hide-mobile">
                                                     <p class="light-text" style="font-family: stolzl, sans-serif !important; font-size:14px; text-transform: uppercase; margin: 0; padding: 0; line-height: 26px; display: none;">high light</p>
                                                     <h1 class="light-text" style="margin: 0; padding: 0; line-height:48px;">
                                                         Prickly Pear Cactus
@@ -595,7 +595,6 @@
                                             </tr>
                                         </table>
                                         <!--<![endif]-->
-
 
                                         <!-- Static Plants -->
                                         <div class="fallback show-mobile">
